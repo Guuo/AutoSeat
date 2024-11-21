@@ -1,70 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Istumajärjestelijä</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            text-align: center;
-            padding: 40px 0;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        main {
-            padding: 20px 0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            color: #666;
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-        }
-    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SeatingOptimizerWASM</title>
+    <base href="https://guuo.github.io/AutoSeat/" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="SeatingOptimizerWASM.styles.css" rel="stylesheet" />
 </head>
+
 <body>
-    <header>
-        <h1>Istumajärjestelijä</h1>
-        <p>Jotain asiaa tähän</p>
-    </header>
+    <div id="app">
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
+    </div>
 
-    <main>
-        <h2>Lisää asiaa tai jotain</h2>
-        <p>Jep jep.</p>
-        
-    </main>
-
-    <footer>
-        <p>© 2024 Guuo. Hosted on GitHub Pages.</p>
-    </footer>
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
 </body>
+
 </html>
