@@ -1,9 +1,9 @@
 {
   "mainAssemblyName": "SeatingOptimizerWASM",
   "resources": {
-    "hash": "sha256-13Zq4HruGO1HuVVyRH+DT4AE4IlQLK/I/AaTRrG9SNk=",
+    "hash": "sha256-iun53cX97aklZYKXLwoFP3tyDX3plzA/CIO3pauG80M=",
     "jsModuleNative": {
-      "dotnet.native.8.0.3.rjz46lfqxc.js": "sha256-MvxEVe5/e3Fur1QzVdWrQuMCZwffp5UhePUykB8eVSE="
+      "dotnet.native.8.0.3.qic35kwyir.js": "sha256-MvxEVe5/e3Fur1QzVdWrQuMCZwffp5UhePUykB8eVSE="
     },
     "jsModuleRuntime": {
       "dotnet.runtime.8.0.3.d2kvxvq3vc.js": "sha256-eQgtmRxLcbxYmADDa49CHs/GuJ7nM6d/UFWo4EVhuIw="
@@ -33,7 +33,7 @@
       "Microsoft.Extensions.Primitives.wasm": "sha256-Ms2HR5Gpug/0uRAzdk4SUNT76Ml3CjFv9Jo+dUIMGac=",
       "Microsoft.JSInterop.wasm": "sha256-7evAxMu7Jzga/74nywUwEtqSnNOlhTRrhFC1jGGXa5s=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-Kr13V+6zGL8rPvFmuBAsaEJfoMlR4Q8keJHKaVGVbGA=",
-      "SeatingOptimizerWASM.wasm": "sha256-i2faES4J1awdh8QzXUqjA71xWstvsAtkMr/p5U7Xi0I=",
+      "SeatingOptimizerWASM.wasm": "sha256-ZV03pn5Vs6EYvZmbHGhNFvPCixfqbDQQXHRGfiLBdzc=",
       "System.Collections.Concurrent.wasm": "sha256-Dlmembi7dppvZJFUooCAWXhDTAdAUfCgQfrzXpVXPLg=",
       "System.Collections.NonGeneric.wasm": "sha256-YDXUNHN10fUl5455RpXuH0o8ZBUAbSAikAy5oXNRVxQ=",
       "System.Collections.Specialized.wasm": "sha256-t+MdejcaXAVSRNnkk+jrOFUqL2jcj6wGQKvxAhvQFsI=",

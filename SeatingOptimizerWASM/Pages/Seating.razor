@@ -6,10 +6,10 @@
     <div class="controls-panel">
         <div class="input-group">
             <label>
-                Table Length:
+                Pöydän pituus istuinpareina:
                 <input type="number" min="2" max="12" @bind="TableLength" />
             </label>
-            <button class="btn btn-primary" @onclick="@CalculateSeating">Calculate Optimal Seating</button>
+            <button class="btn btn-primary" @onclick="@CalculateSeating">Etsi istumajärjestys</button>
         </div>
         
         <div class="input-group">
@@ -18,12 +18,12 @@
         
         <div class="input-group">
             <label>
-                Name Column:
-                <input type="text" @bind="NameColumnName" />
+                Nimisarake:
+                <input type="text" @bind="NameColumnName" placeholder="Sarakkeen nimi tähän" />
             </label>
             <label>
-                Adjacent Preferences Column:
-                <input type="text" @bind="RequestedAdjacentPeopleColumnName" />
+                Vierustoveritoiveiden sarake:
+                <input type="text" @bind="RequestedAdjacentPeopleColumnName" placeholder="Sarakkeen nimi tähän" />
             </label>
         </div>
     </div>
@@ -248,8 +248,8 @@
 </style>
 
 @code {
-    private string NameColumnName { get; set; } = "Nimi";
-    private string RequestedAdjacentPeopleColumnName { get; set; } = "Viereen";
+    private string NameColumnName { get; set; } = String.Empty;
+    private string RequestedAdjacentPeopleColumnName { get; set; } = String.Empty;
     private int TableLength { get; set; } = 4;
     private List<List<string>> Tables { get; set; } = new();
     private int SelectedSeatIndex { get; set; } = -1;
@@ -348,15 +348,6 @@
             return;
         }   
 
-        // PLACEHOLDER: Replace with actual optimization algorithm
-        // Sample data for visualization with multiple tables
-        var sampleNames = new List<string> 
-        { 
-            "Alice", "Bob", "Charlie", "David",
-            "Eve", "Frank", "Grace", "Henry",
-            "Isabel", "Jack", "Karen", "Leo",
-            "Mary", "Nick", "Olivia", "Peter" 
-        };
 
         Tables.Clear();
         int totalPeople = seatRequests.Count;
