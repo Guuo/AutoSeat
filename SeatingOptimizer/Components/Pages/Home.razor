@@ -1,0 +1,128 @@
+﻿@page "/"
+
+<style>
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1 {
+        color: #2c3e50;
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+    }
+
+    .instructions {
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .step {
+        margin-bottom: 25px;
+        position: relative;
+        padding-left: 40px;
+    }
+
+    .step-number {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 28px;
+        height: 28px;
+        background-color: #3498db;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+    .important-note {
+        background-color: #fff3cd;
+        border-left: 4px solid #ffc107;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 0 4px 4px 0;
+    }
+
+    .example {
+        background-color: #e8f4f8;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin: 10px 0;
+        font-family: monospace;
+    }
+
+    @@media (max-width: 768px) {
+        .container {
+            padding: 15px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .instructions {
+            padding: 20px;
+        }
+
+        .step {
+            padding-left: 35px;
+        }
+
+        .step-number {
+            width: 24px;
+            height: 24px;
+            font-size: 0.9rem;
+        }
+    }
+</style>
+
+<div class="container">
+    <h1>Istumisjärjestysoptimoija</h1>
+
+    <div class="instructions">
+        <div class="step">
+            <div class="step-number">1</div>
+            <p>Toteuta Google Formsilla tai muulla .csv -muotoista dataa tuottavalla työkalulla kysely, josta ilmenee osallistujan nimi sekä tekstimuotoinen lista halutuista vierustovereista pilkulla eroteltuna.</p>
+            <div class="example">
+                esim. "Matti Meikäläinen, Aatu, Jonna-Pekka"
+            </div>
+            <div class="important-note">
+                Huom! Vastaajan listaamien nimien on vastattava täysin nimiä, joilla kyseiset henkilöt ovat itse vastanneet kyselyyn, muuten heidät tulkitaan eri henkilöiksi.
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">2</div>
+            <p>Lataa valmiista kyselystä .csv -muotoinen tiedosto.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">3</div>
+            <p>Mene Seating-osioon ja syötä "Table Length" -kenttään käyttämiesi pöytien leveys ihmispareina ilmaistuna. Pöytään mahtuvien ihmisten määrä on siis tämä luku kertaa kaksi.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">4</div>
+            <p>Syötä .csv-tiedosto tiedostovalitsimen avulla.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">5</div>
+            <p>Kirjoita kyselyssä käyttämäsi otsikot "Name Column" ja "Adjacent Preferences Column" -tekstikenttiin. Voit tarkistaa otsikot esimerkiksi avaamalla .csv-tiedoston, jonka yläreunassa näkyvät kaikki lomakkeeseen tallennettujen sarakkeiden nimet.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">6</div>
+            <p>Paina "Calculate Optimal Seating" -painiketta.</p>
+        </div>
+    </div>
+</div>
