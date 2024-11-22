@@ -1,5 +1,5 @@
 # Istumajärjestysoptimoija
-Blazor WebAssembly -sovellus, joka optimoi istumajärjestyksen sitseille tai muille "pitkän pöydän" juhlille hyödyntäen algoritminään simuloitua jäähdytystä (simulated annealing).
+Blazor WebAssembly -sovellus, joka optimoi istumajärjestyksen sitseille tai muille "pitkän pöydän" juhlille hyödyntäen algoritminaan simuloitua jäähdytystä (simulated annealing).
 
 ## 💻 Käyttöönotto
 
