@@ -337,11 +337,14 @@
 
     private void CalculateSeating()
     {
-        List<SeatRequest> seatRequests = CsvParser.ParseCsv(CsvData, NameColumnName, RequestedAdjacentPeopleColumnName);
         var clusters = new List<HashSet<int>>();
+        List<SeatRequest> seatRequests;
+
         try
         {
+            seatRequests = CsvParser.ParseCsv(CsvData, NameColumnName, RequestedAdjacentPeopleColumnName);
             clusters = SeatCalc.GetClusters(seatRequests, TableLength);
+
         } catch(Exception ex)
         {
             errorMessage = ex.Message;
